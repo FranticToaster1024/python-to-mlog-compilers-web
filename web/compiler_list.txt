@@ -1,0 +1,3 @@
+minpiler=git+https://github.com/neumond/minpiler/
+pyndustric=git+https://codeberg.org/lonami/pyndustric/
+py2mlog=git+https://github.com/FranticToaster1024/py2mlog/
