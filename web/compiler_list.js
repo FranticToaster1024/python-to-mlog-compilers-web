@@ -11,6 +11,10 @@ export default new Map(Object.entries({
         src_link: "https://github.com/FranticToaster1024/py2mlog/",
         load: py2mlog_load,
     },
+    "mlog-py": {
+        src_link: "https://github.com/annguyen2k8/mlog-py/",
+        load: mlog_py_load,
+    },
 }));
 
 
@@ -26,4 +30,7 @@ function pyndustric_load(pyodide) {
 }
 function py2mlog_load(pyodide) {
     return pyodide.pyimport("py2mlog.api").compile_src_to_mlog;
+}
+function mlog_py_load(pyodide) {
+    return (src) => pyodide.pyimport("mlog-py.mlog").compile_py(src).mlog;
 }
