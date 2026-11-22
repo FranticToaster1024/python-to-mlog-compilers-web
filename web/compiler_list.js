@@ -11,7 +11,7 @@ export default new Map(Object.entries({
         src_link: "https://github.com/FranticToaster1024/py2mlog/",
         load: py2mlog_load,
     },
-    "mlog-py": {
+    "mlog_py": {
         src_link: "https://github.com/annguyen2k8/mlog-py/",
         load: mlog_py_load,
     },
