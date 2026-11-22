@@ -32,5 +32,5 @@ function py2mlog_load(pyodide) {
     return pyodide.pyimport("py2mlog.api").compile_src_to_mlog;
 }
 function mlog_py_load(pyodide) {
-    return (src) => pyodide.pyimport("mlog-py.mlog").compile_py(src).mlog;
+    return (src) => pyodide.pyimport("mlog.mlog").compile_py(src).mlog;
 }
